@@ -1,5 +1,5 @@
 $(document).ready( function() {
-var options = ['rock', 'paper', 'scissors']
+var options = ['Rock', 'Paper', 'Scissors']
 var userChoice = null
 var compRoll
 var gamesTotal = 0
@@ -13,7 +13,7 @@ var tiePer = 0
 //USER SELECTION//
 $('.selection').on('click', function() {
   userChoice = $(this).data().type
-  $('#userResult').text('You chose ' + userChoice)
+  $('#userResult').text("You chose: " + userChoice)
 })
 
 //COMPUTER SELECTION//
@@ -30,7 +30,7 @@ $('#playgame').on('click', function() {
     gamesTotal++
     $('#gamesTotal').text(gamesTotal)
     compRoll = options[Math.floor(Math.random() * options.length)]
-    $('#compResult').text("Computer chose " + compRoll)
+    $('#compResult').text("Computer chose: " + compRoll)
     evaluate()
     percent()
   }
@@ -39,18 +39,33 @@ $('#playgame').on('click', function() {
 
 //EVALUATE//
 function evaluate() {
-  if ((userChoice === 'paper' && compRoll === 'rock') ||
-    (userChoice === 'rock' && compRoll === 'scissors') ||
-    (userChoice === 'scissors' && compRoll === 'paper')) {
+  // WIN //
+  if ((userChoice === 'Paper' && compRoll === 'Rock') ||
+    (userChoice === 'Rock' && compRoll === 'Scissors') ||
+    (userChoice === 'Scissors' && compRoll === 'Paper')) {
       gamesWon++
-      $('#gameResult').text("You Win!")
+      $('#gameResult').css({
+          'color': 'green',
+          'border': '2px solid green',
+        })
+      $('#gameResult').text("You Win!").fadeToggle(2000)
       $('#gamesWon').text(gamesWon)
+  // TIE //
   } else if (compRoll === userChoice) {
       gamesTied++
-        $('#gameResult').text("Tie Game!")
+        $('#gameResult').css({
+          'color': 'blue',
+          'border': '3px solid blue',
+        })
+        $('#gameResult').text("Tie Game!").fadeToggle(2000)
         $('#gamesTied').text(gamesTied)
-  } else { $('#gameResult').text("You lose!")
+  // LOSE //
+} else { $('#gameResult').text("You lose!").fadeToggle(2000)
       gamesLost++
+        $('#gameResult').css({
+          'color': 'red',
+          'border': '3px solid red',
+        })
         $('#gamesLost').text(gamesLost)
 }
 }

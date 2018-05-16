@@ -5,38 +5,41 @@
   </head>
   <body>
   <div class="wrapper">
-        <h1>Rock Paper Scissors</h1>
 
+
+    <section class="main">
 <!-- MAIN SECTION OF CHOICES -->
-
+        <h1>Rock Paper Scissors</h1>
       <div id="imgchoices">
-          <img class="selection" data-type="rock" src="images/rock.jpg">
-          <img class="selection" data-type="paper" src="images/paper.jpg">
-          <img class="selection" data-type="scissors" src="images/scissors.jpg">
+          <img class="selection" data-type="Rock" src="images/Rock.jpg">
+          <img class="selection" data-type="Paper" src="images/Paper.jpg">
+          <img class="selection" data-type="Scissors" src="images/Scissors.jpg">
       </div>
 
       <div id="btnchoices">
-        <button class="selection" data-type="rock" type="button">Rock</button>
-        <button class="selection" data-type="paper" type = "button">Paper</button>
-        <button class="selection" data-type="scissors" type = "button">Scissors</button>
+        <button class="selection" data-type="Rock" type="button">Rock</button>
+        <button class="selection" data-type="Paper" type = "button">Paper</button>
+        <button class="selection" data-type="Scissors" type = "button">Scissors</button>
       </div>
 
         <button type = "button" id="playgame">Play Game</button>
 
+        <h2 id="gameResult"></h2>
+    </section>
 <!-- ASIDE -->
-  <aside id="results">
+    <aside id="results">
 
-        <h1 id="userResult"></h1>
-        <h1 id="compResult"></h1>
-        <h1 id="gameResult"></h1>
+        <h4 id="userResult"></h4>
+        <h4 id="compResult"></h4>
 
-        <h3>Total games played: </h3> <h3 id="gamesTotal"></h3>
 
-        <h3>You've lost: </h3><h3 id="gamesLost"></h3>
+        <h4>Total games played: </h4> <h4 id="gamesTotal"></h4>
+
+        <h4>You've lost: </h4><h4 id="gamesLost"></h4>
         <h4>Loss percentage: </h4><h4 id="lossPer"></h4>
-        <h3>You've won: </h3><h3 id="gamesWon"></h3>
+        <h4>You've won: </h4><h4 id="gamesWon"></h4>
         <h4>Win percentage: </h4><h4 id="winPer"></h4>
-        <h3>You've tied: </h3> <h3 id="gamesTied"></h3>
+        <h4>You've tied: </h4> <h4 id="gamesTied"></h4>
         <h4>Tie percentage: </h4><h4 id="tiePer"></h4>
 
 
