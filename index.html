@@ -1,0 +1,49 @@
+<html>
+  <head>
+    <title>RPS JQUERY</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+  <div class="wrapper">
+        <h1>Rock Paper Scissors</h1>
+
+<!-- MAIN SECTION OF CHOICES -->
+
+      <div id="imgchoices">
+          <img class="selection" data-type="rock" src="images/rock.jpg">
+          <img class="selection" data-type="paper" src="images/paper.jpg">
+          <img class="selection" data-type="scissors" src="images/scissors.jpg">
+      </div>
+
+      <div id="btnchoices">
+        <button class="selection" data-type="rock" type="button">Rock</button>
+        <button class="selection" data-type="paper" type = "button">Paper</button>
+        <button class="selection" data-type="scissors" type = "button">Scissors</button>
+      </div>
+
+        <button type = "button" id="playgame">Play Game</button>
+
+<!-- ASIDE -->
+  <aside id="results">
+
+        <h1 id="userResult"></h1>
+        <h1 id="compResult"></h1>
+        <h1 id="gameResult"></h1>
+
+        <h3>Total games played: </h3> <h3 id="gamesTotal"></h3>
+
+        <h3>You've lost: </h3><h3 id="gamesLost"></h3>
+        <h4>Loss percentage: </h4><h4 id="lossPer"></h4>
+        <h3>You've won: </h3><h3 id="gamesWon"></h3>
+        <h4>Win percentage: </h4><h4 id="winPer"></h4>
+        <h3>You've tied: </h3> <h3 id="gamesTied"></h3>
+        <h4>Tie percentage: </h4><h4 id="tiePer"></h4>
+
+
+    </aside>
+  </div>
+      <script src="./jquery-3.3.1.min.js"></script>
+      <script src="./main.js"></script>
+
+    </body>
+</html>
