@@ -1,4 +1,4 @@
-* {
+  * {
   margin: 0;
   padding: 0;
   border: border-box;
@@ -83,4 +83,16 @@ button:hover {
   flex-direction: column;
   justify-content: center;
   flex: 1;
+  color: red;
+}
+
+.choices { 
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  padding: 20px 0 40px 0;
+}
+
+.selectAll {
+  display: none;
 }

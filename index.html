@@ -5,12 +5,13 @@
     <link rel="stylesheet" href="./style.css" />
   </head>
   <body>
-
+  <div class="selectAll">
     <div class="header"><h1>Rock Paper Scissors</h1></div>
   <div class="wrapper">
 
     <section class="main">
-<!-- MAIN SECTION OF CHOICES -->
+
+      <!-- MAIN SECTION OF CHOICES -->
 
       <div id="imgchoices">
           <img class="selection" data-type="Rock" src="images/rock.jpg">
@@ -28,27 +29,31 @@
 
         <h2 id="gameResult"></h2>
     </section>
-<!-- ASIDE -->
-    <aside id="results">
 
-        <h4 id="userResult">You chose:   </h4>
-        <h4 id="compResult">Computer chose:   </h4>
+    <!-- ASIDE -->
+<aside id="results">
 
+  <div class="reset">
+      <button type = "button" id="reset">Reset Game</button>
+  </div>
 
-
-        <h4>Total games played: </h4> <p id="gamesTotal"><p>
-        <h4>You've lost: </h4><h4 id="gamesLost"></h4>
-        <h4>Loss percentage: </h4><h4 id="lossPer"></h4>
-        <h4>You've won: </h4><h4 id="gamesWon"></h4>
-        <h4>Win percentage: </h4><h4 id="winPer"></h4>
-        <h4>You've tied: </h4> <h4 id="gamesTied"></h4>
-        <h4>Tie percentage: </h4><h4 id="tiePer"></h4>
-
-
+  <div class="choices">
+    <h2 id="userResult">You chose:  </h2>
+    <h2 id="compResult">Computer chose:   </h2>
+  </div>  
+      <div class="changecolor">
+        <h4 id="gamesTotal">Total games played:</h4>
+        <h4 id="gamesLost">Games lost:</h4>
+        <h4 id="lossPer">Loss percentage:</h4>
+        <h4 id="gamesWon">Games won:</h4>
+        <h4 id="winPer">Win percentage:</h4>
+        <h4 id="gamesTied">Games tied:</h4>
+        <h4 id="tiePer">Tie percentage:</h4>
+      </div>  
     </aside>
   </div>
       <script src="./jquery-3.3.1.min.js"></script>
       <script src="./main.js"></script>
-
+</div>
     </body>
 </html>
