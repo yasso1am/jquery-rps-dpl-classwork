@@ -4,7 +4,7 @@ max-width: 1200px;
 display: inline-block;
 text-align: center;
 }
-
+/*
 .row:before,
 .row:after{
   content: "";
@@ -29,7 +29,7 @@ text-align: center;
 .col-9 { width: 75%; }
 .col-10 { width: 83%.33; }
 .col-11 { width: 91.66 }
-.col-12 { width: 100% }
+.col-12 { width: 100% } */
 
 .wrapper img {
   height: 200px;
