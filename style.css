@@ -1,82 +1,86 @@
-.wrapper {
-width: 100%;
-max-width: 1200px;
-display: inline-block;
-text-align: center;
+* {
+  margin: 0;
+  padding: 0;
+  border: border-box;
+  font-family: 'Dosis', sans-serif;
+  background-image: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url('images/rps.jpg');
+    background-position: center;
+      background-attachment: fixed;
+      background-repeat: no-repeat;
+      background-size: cover;
 }
-/*
-.row:before,
-.row:after{
-  content: "";
-  display: table;
-  clear: both;
-}
-
-[class*='col-'] {
-  float: left;
-  min-height: 1px;
-  width: 8.33%;
-  padding: 12px;
-}
-
-.col-1 { width: 8.33% }
-.col-2 { width: 16.66% }
-.col-3 { width: 25% }
-.col-5 { width: 33.33% }
-.col-6 { width: 50% }
-.col-7 { width: 58.33% }
-.col-8 { width: 66.66% }
-.col-9 { width: 75%; }
-.col-10 { width: 83%.33; }
-.col-11 { width: 91.66 }
-.col-12 { width: 100% } */
-
-.wrapper img {
-  height: 200px;
-  padding: 5px 10px 20px 10px;
-  width: 200px;
+.header {
   text-align: center;
+  padding: 25px 0 25px 0;
+}
+
+.wrapper {
+  display: flex;
+  justify-content: center;
+  max-width: auto;
+  min-height: 400px;
+  margin: 0px 40px;
+}
+
+/* FONTS */
+
+* {
+  color: white;
+}
+
+h1 {
+  text-decoration: underline;
+  font-weight: 300;
+  font-size: 40px;
+  color: white;
 }
 
 .main {
-  max_width: 65%;
-  overflow: hidden;
-  text-align: center;
-  float: left;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 10px 30px 0 0;
+  border-right: 1px solid white;
+  flex: 3;
 }
 
-.main button {
-  font-size: 16px;
-  margin: 0px 20px 20px 20px;
+.main img {
+  height: 200px;
+  width: 200px;
+  border-radius: 15%;
+  border: 2px solid black;
 }
 
-#playgame {
-  font-size: 36px;
-  margin: 20px 20px 20px 20px;
-  padding: 10px 10px 10px 10px;
-  border-radius: 30%;
-  border: 4px solid;
+#imgchoices {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
 }
 
-/* Headers */
+#btnchoices {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+}
 
-h1 {
-  font-size: 36px;
-  text-decoration: underline;
+button {
+  border-radius: 10%;
+  margin: 20px;
+  padding: 10px 20px;
+  background: white;
+  color: black;
+  font-weight: 600;
 }
-h2 {
-  font-size: 30px;
-}
-h4 {
-  font-size: 16px;
+
+button:hover {
+    background-color: #4CAF50;
+    color: white;
 }
 
 #results {
-  max-width: 30%;
-  display: inline-block;
-  text-align: left;
-  float: right;
-  margin: 0 15px 0 15px;
-  padding-left: 15px;
-  border-left: solid 1px black;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  flex: 1;
 }

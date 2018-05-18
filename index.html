@@ -1,15 +1,17 @@
 <html>
   <head>
     <title>RPS JQUERY</title>
+    <link href="https://fonts.googleapis.com/css?family=Dosis:300,400,500,700,800" rel="stylesheet">
     <link rel="stylesheet" href="./style.css" />
   </head>
   <body>
-  <div class="wrapper">
 
+    <div class="header"><h1>Rock Paper Scissors</h1></div>
+  <div class="wrapper">
 
     <section class="main">
 <!-- MAIN SECTION OF CHOICES -->
-        <h1>Rock Paper Scissors</h1>
+
       <div id="imgchoices">
           <img class="selection" data-type="Rock" src="images/rock.jpg">
           <img class="selection" data-type="Paper" src="images/paper.jpg">
@@ -29,12 +31,12 @@
 <!-- ASIDE -->
     <aside id="results">
 
-        <h4 id="userResult"></h4>
-        <h4 id="compResult"></h4>
+        <h4 id="userResult">You chose:   </h4>
+        <h4 id="compResult">Computer chose:   </h4>
 
 
-        <h4>Total games played: </h4> <h4 id="gamesTotal"></h4>
 
+        <h4>Total games played: </h4> <p id="gamesTotal"><p>
         <h4>You've lost: </h4><h4 id="gamesLost"></h4>
         <h4>Loss percentage: </h4><h4 id="lossPer"></h4>
         <h4>You've won: </h4><h4 id="gamesWon"></h4>

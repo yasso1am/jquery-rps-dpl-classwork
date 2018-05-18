@@ -13,7 +13,7 @@ var tiePer = 0
 //USER SELECTION//
 $('.selection').on('click', function() {
   userChoice = $(this).data().type
-  $('#userResult').text("You chose: " + userChoice)
+  $('#userResult').text("You chose: " + '   ' + userChoice)
 })
 
 //COMPUTER SELECTION//
